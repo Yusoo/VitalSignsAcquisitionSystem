@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This system collects vital sign data from various hospital monitoring devices (such as anesthesia machines, patient monitors, etc.) and provides a data query service for third-party applications.
+This system collects vital sign data (excluding waveforms and alarms) from various hospital monitoring devices (such as anesthesia machines, patient monitors, etc.) and provides a data query service for third-party applications.
 
 ## Features
 
