@@ -1,21 +1,21 @@
-# Patient Vital Signs Data Collection System
+# Patient Vital Signs Data Acquisition System
 
 [简体中文](./README.md) | English
 
-## Introduction
+## Overview
 
-This system collects vital sign data (excluding waveforms and alarms) from various hospital monitoring devices (such as anesthesia machines, patient monitors, etc.) and provides a data query service for third-party applications.
+The system is designed to acquire patients’ vital signs data (excluding waveforms and alarms) from various hospital monitoring devices such as anesthesia machines and patient monitors. It also provides query services for third-party application systems to access the collected vital signs data.
 
 ## Features
 
-- **Extensive Device Support**: Compatible with popular device models such as Philips, Dräger, Mindray, Biolight, Comen, Edan, GE, and Ohmeda, with the ability to add support for more devices as needed.
-- **Flexible Deployment Options**: Supports both centralized and distributed deployment. Distributed nodes can temporarily store data when the network is down and automatically resume transmission when the network is restored. The system can be deployed on data collection boxes or industrial computers, adapting to different scenarios.
-- **Multi-Platform Compatibility**: Supports a variety of operating systems, including Windows and Linux, and can be registered as a system service for automatic startup upon boot.
-- **Multiple Network Connection Types**: The system supports direct connection to devices or data collection via servers across switches and routers. For devices without network ports, data can also be collected via serial or USB interfaces.
-- **Customizable Data Collection**: Allows users to configure which vital signs to collect and supports code conversion between devices and application systems.
-- **Data Structuring and Analysis**: The system provides raw data queries as well as data output at intervals of 1 minute, 5 minutes, or 1 hour, offering maximum, minimum, and average values for each time period.
-- **User-Friendly Interface**: Integrated with a visual interface, the system enables real-time monitoring of each device's data and online status, making maintenance convenient.
-- **Efficient and Stable**: Tested across multiple projects, the system strikes a balance between speed and stability, capable of simultaneously collecting data from hundreds of devices with minimal resource usage (1 CPU core and 1GB RAM).
+- **Extensive Device Compatibility**: Supports commonly used medical devices from Philips, Dräger, Mindray, Biolight, Comen, Edan, GE Healthcare, Ohmeda, and more. Additional device models can be integrated as needed.
+- **Flexible Deployment Options**: Supports both centralized and distributed deployment modes. Distributed nodes can temporarily store data during network outages and automatically resume transmission when the network is restored. The system can be deployed on data acquisition boxes or industrial computers to accommodate different application scenarios.
+- **Multi-Platform Support**: Compatible with major operating systems such as Windows and Linux, and can be registered as a system service to enable automatic startup on boot.
+- **Multiple Connectivity Methods**: Supports direct device connections or data acquisition across switches and routers. Devices without network ports can also be connected via serial ports or USB.
+- **Customizable Data Acquisition**: Users can configure which vital signs items to collect, and the system supports mapping device-specific codes to third-party application system codes.
+- **Data Normalization and Analytics**: In addition to raw data retrieval, the system can output normalized data at regular intervals (e.g., 1 minute, 5 minutes, 1 hour) and provide multi-dimensional metrics such as maximum, minimum, and average values within a given time range.
+- **Visualized Operations Dashboard**: Comes with a user-friendly visual interface for operations and maintenance teams to monitor real-time device data and connection status.
+- **High Performance and Stability**: Proven in numerous real-world deployments, the system achieves high data throughput with low resource consumption. A single-core CPU and 1 GB RAM can support data acquisition for hundreds of devices simultaneously.
 
 ## Interfaces
 
@@ -27,16 +27,18 @@ This system collects vital sign data (excluding waveforms and alarms) from vario
 
 ![vital sign data](5m.png "vital sign data")
 
-<center>5 minutes data</center>
+<center>Data consolidation every 5 minutes</center>
 
 ## Contact Us
 
-For more information or technical support, please reach out to us via the following methods:
+For more information or project collaboration, please contact us via the following methods:
 
 Email: yusoo@qq.com
 
 ## Links
 
-[VitalSignsAcquisitionSystem](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
+[Github](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
+
+[VitalSignsAcquisitionSystem](https://yusoo.github.io/VitalSignsAcquisitionSystem/README.en.html)
 
 [HL7](https://www.hl7.org)

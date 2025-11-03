@@ -37,7 +37,7 @@
 
 ## 链接
 
-[VitalSignsAcquisitionSystem](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
+[Github](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
 
 [病人生命体征数据采集系统](https://yusoo.github.io/VitalSignsAcquisitionSystem/)
 
