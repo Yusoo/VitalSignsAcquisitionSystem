@@ -37,8 +37,8 @@
 
 ## 链接
 
-[VitalSignsCaptureSystem](https://github.com/Yusoo/VitalSignsCaptureSystem)
+[VitalSignsAcquisitionSystem](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
 
-[病人生命体征数据采集系统](https://yusoo.github.io/VitalSignsCaptureSystem/)
+[病人生命体征数据采集系统](https://yusoo.github.io/VitalSignsAcquisitionSystem/)
 
 [HL7 协议](https://www.hl7.org)

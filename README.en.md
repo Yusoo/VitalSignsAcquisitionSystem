@@ -37,6 +37,6 @@ Email: yusoo@qq.com
 
 ## Links
 
-[VitalSignsCaptureSystem](https://github.com/Yusoo/VitalSignsCaptureSystem)
+[VitalSignsAcquisitionSystem](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
 
 [HL7](https://www.hl7.org)
