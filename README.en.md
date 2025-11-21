@@ -1,6 +1,6 @@
 # Patient Vital Signs Data Acquisition System
 
-[简体中文](./README.md) | English
+[简体中文](https://yusoo.github.io/VitalSignsAcquisitionSystem/) | English
 
 ## Overview
 
@@ -36,8 +36,6 @@ For more information or project collaboration, please contact us via the followi
 Email: yusoo@qq.com
 
 ## Links
-
-[Github](https://github.com/Yusoo/VitalSignsAcquisitionSystem)
 
 [VitalSignsAcquisitionSystem](https://yusoo.github.io/VitalSignsAcquisitionSystem/README.en.html)
 
