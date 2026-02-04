@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
@@ -276,7 +276,9 @@
         background: #fff;
         padding: 30px;
         border-radius: 8px;
-        transition: transform 0.3s, box-shadow 0.3s;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
         border: 1px solid #eee;
       }
       .feature-card:hover {
@@ -330,17 +332,52 @@
       }
 
       /* 兼容性品牌墙 */
+      .brand-grid {
+        gap: 20px;
+      }
       .brand-grid div {
         background: #fff;
-        border: 1px solid #eee;
-        height: 80px;
+        border: 1px solid #f0f0f0;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: bold;
-        color: #999;
+        font-weight: 600;
+        color: #4a5568;
         font-size: 18px;
-        border-radius: 4px;
+        border-radius: 12px;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.05),
+          0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        cursor: default;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .brand-grid div::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: var(--primary-color);
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .brand-grid div:hover {
+        transform: translateY(-8px);
+        box-shadow:
+          0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        color: var(--primary-color);
+        border-color: #e6f2ff;
+      }
+
+      .brand-grid div:hover::before {
+        opacity: 1;
       }
 
       /* 可视化界面展示区 */
@@ -353,7 +390,7 @@
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        max-width: 900px;
+        max-width: 800px;
         margin: 0 auto;
         border: 1px solid #4a5568;
       }
@@ -386,6 +423,61 @@
         color: #718096;
         background: #2d3748;
         flex-direction: column;
+        position: relative;
+      }
+
+      /* 轮播图样式 */
+      .slider-container {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .slider-item {
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slider-item img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+      }
+
+      .slider-dots {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+        z-index: 10;
+      }
+
+      .slider-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .slider-dot.active {
+        background: var(--primary-color);
+        width: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
       }
 
       /* 底部 */
@@ -451,8 +543,16 @@
     <!-- 导航栏 -->
     <header>
       <div class="container">
-        <div class="flex justify-between items-center" style="width: 100%">
-          <div class="nav-logo"><span>H</span> 生命体征数据采集</div>
+        <div class="flex justify-between items-center">
+          <div class="nav-logo">
+            <svg viewBox="0 0 1024 1024" width="24" height="24" fill="#009245">
+              <path
+                d="M905.898667 761.514667c-23.409778 0-45.824 9.585778-62.122667 26.481777l-112.981333-65.479111v-233.187555l-200.362667-116.224V261.802667a88.832 88.832 0 0 0 72.419556-92.472889 88.746667 88.746667 0 0 0-82.261334-83.768889 88.576 88.576 0 0 0-92.928 71.623111 88.974222 88.974222 0 0 0 59.107556 101.603556v113.550222l-200.362667 116.992v229.774222-2.645333l-105.443555 61.326222a87.04 87.04 0 0 0-110.705778-16.412445 88.035556 88.035556 0 0 0-35.953778 106.524445 87.267556 87.267556 0 0 0 97.792 54.698667 87.722667 87.722667 0 0 0 71.082667-86.897778 75.377778 75.377778 0 0 0-2.247111-18.545778l103.566222-59.818667 205.596444 119.239111 199.992889-115.825777 112.952889 65.507555a83.456 83.456 0 0 0-3.754667 23.836445c0 35.868444 21.504 68.181333 54.499556 81.863111a87.722667 87.722667 0 0 0 96.056889-19.370667 88.888889 88.888889 0 0 0 18.887111-96.654222 88.120889 88.120889 0 0 0-81.692445-54.414222h-1.137777z m-553.585778-258.190223l156.273778-90.851555 157.44 90.851555-156.302223 90.851556-157.411555-90.851556z m334.791111 219.960889l-156.672 90.851556v-181.703111l156.672-91.249778v182.101333z"
+              ></path>
+            </svg>
+
+            生命体征数据采集
+          </div>
           <div class="nav-links">
             <a href="#home">首页</a>
             <a href="#intro">产品介绍</a>
@@ -661,12 +761,76 @@
             <div class="dot dot-green"></div>
           </div>
           <div class="browser-content">
-            <!-- 占位图标 -->
-            <img src="device.png" style="max-width: 100%" />
+            <div class="slider-container">
+              <div class="slider-wrapper" id="sliderWrapper">
+                <div class="slider-item">
+                  <img src="screenshot1.jpg" alt="界面预览 1" />
+                </div>
+                <div class="slider-item">
+                  <img src="screenshot2.jpg" alt="界面预览 2" />
+                </div>
+                <div class="slider-item">
+                  <img src="screenshot3.jpg" alt="界面预览 3" />
+                </div>
+              </div>
+              <div class="slider-dots" id="sliderDots"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      // 轮播图逻辑
+      const wrapper = document.getElementById("sliderWrapper");
+      const dotsContainer = document.getElementById("sliderDots");
+      const slides = wrapper.querySelectorAll(".slider-item");
+      const totalSlides = slides.length;
+      let currentIndex = 0;
+
+      // 动态生成小圆点
+      for (let i = 0; i < totalSlides; i++) {
+        const dot = document.createElement("div");
+        dot.classList.add("slider-dot");
+        if (i === 0) dot.classList.add("active");
+        dot.setAttribute("data-index", i);
+        dot.addEventListener("click", () => {
+          goToSlide(i);
+          resetTimer();
+        });
+        dotsContainer.appendChild(dot);
+      }
+
+      const dots = dotsContainer.querySelectorAll(".slider-dot");
+
+      function goToSlide(index) {
+        currentIndex = index;
+        wrapper.style.transform = `translateX(-${index * 100}%)`;
+
+        // 更新小圆点
+        dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add("active");
+          } else {
+            dot.classList.remove("active");
+          }
+        });
+      }
+
+      // 自动轮播
+      let timer = setInterval(() => {
+        let nextIndex = (currentIndex + 1) % totalSlides;
+        goToSlide(nextIndex);
+      }, 5000);
+
+      function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(() => {
+          let nextIndex = (currentIndex + 1) % totalSlides;
+          goToSlide(nextIndex);
+        }, 5000);
+      }
+    </script>
 
     <!-- 底部与联系 -->
     <section class="section" id="contact">
