@@ -1,6 +1,6 @@
 # Patient Vital Signs Data Acquisition System
 
-[简体中文](https://yusoo.github.io/VitalSignsAcquisitionSystem/) | English
+[简体中文](./README.md) | English
 
 ## Overview
 
@@ -29,6 +29,18 @@ The system is designed to acquire patients’ vital signs data (excluding wavefo
 
 <center>Data consolidation every 5 minutes</center>
 
+---
+
+![data platform](screenshot1.jpg "data platform")
+
+<center>Data platform</center>
+
+---
+
+![data platform](screenshot3.jpg "data platform")
+
+<center>Data platform</center>
+
 ## Contact Us
 
 For more information or project collaboration, please contact us via the following methods:
@@ -37,6 +49,6 @@ Email: yusoo@qq.com
 
 ## Links
 
-[VitalSignsAcquisitionSystem](https://yusoo.github.io/VitalSignsAcquisitionSystem/README.en.html)
+[VitalSignsAcquisitionSystem](https://yusoo.github.io/VitalSignsAcquisitionSystem/)
 
 [HL7](https://www.hl7.org)
