@@ -29,6 +29,18 @@
 
 <center>每 5 分钟的数据规整</center>
 
+---
+
+![数据平台](screenshot1.jpg "数据平台")
+
+<center>数据平台</center>
+
+---
+
+![数据平台](screenshot3.jpg "数据平台")
+
+<center>数据平台</center>
+
 ## 联系
 
 如需了解更多信息或项目合作，请通过以下方式联系我们：
