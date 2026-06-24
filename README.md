@@ -1,4 +1,4 @@
-# 病人生命体征数据采集系统
+# Hiot 病人生命体征数据采集系统
 
 简体中文 | [English](./README.en.md)
 
@@ -49,6 +49,6 @@
 
 ## 链接
 
-[病人生命体征数据采集系统](https://yusoo.github.io/VitalSignsAcquisitionSystem/)
+[生命体征数据采集系统](https://yusoo.github.io/VitalSignsAcquisitionSystem/)
 
 [HL7 协议](https://www.hl7.org)

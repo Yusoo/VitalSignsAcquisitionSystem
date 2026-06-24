@@ -1,4 +1,4 @@
-# Patient Vital Signs Data Acquisition System
+# Hiot Patient Vital Signs Data Acquisition System
 
 [简体中文](./README.md) | English
 
@@ -13,21 +13,21 @@ The system is designed to acquire patients’ vital signs data (excluding wavefo
 - **Multi-Platform Support**: Compatible with major operating systems such as Windows and Linux, and can be registered as a system service to enable automatic startup on boot.
 - **Multiple Connectivity Methods**: Supports direct device connections or data acquisition across switches and routers. Devices without network ports can also be connected via serial ports or USB.
 - **Customizable Data Acquisition**: Users can configure which vital signs items to collect, and the system supports mapping device-specific codes to third-party application system codes.
-- **Data Normalization and Analytics**: In addition to raw data retrieval, the system can output normalized data at regular intervals (e.g., 1 minute, 5 minutes, 1 hour) and provide multi-dimensional metrics such as maximum, minimum, and average values within a given time range.
+- **Data Aggregation and Analytics**: In addition to raw data retrieval, the system can output aggregated data at regular intervals (e.g., 1 minute, 5 minutes, 1 hour) and provide multi-dimensional metrics such as maximum, minimum, and average values within a given time range.
 - **Visualized Operations Dashboard**: Comes with a user-friendly visual interface for operations and maintenance teams to monitor real-time device data and connection status.
 - **High Performance and Stability**: Proven in numerous real-world deployments, the system achieves high data throughput with low resource consumption. A single-core CPU and 1 GB RAM can support data acquisition for hundreds of devices simultaneously.
 
-## Interfaces
+## Screenshots
 
 ![device](device.png "device")
 
-<center>devices status</center>
+<center>Device Status</center>
 
 ---
 
 ![vital sign data](5m.png "vital sign data")
 
-<center>Data consolidation every 5 minutes</center>
+<center>5-minute Data Aggregation</center>
 
 ---
 
@@ -43,7 +43,7 @@ The system is designed to acquire patients’ vital signs data (excluding wavefo
 
 ## Contact Us
 
-For more information or project collaboration, please contact us via the following methods:
+For more information or project collaboration, please contact us at:
 
 Email: yusoo@qq.com
 
