@@ -4,143 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hiot 生命体征数据采集系统 - 医疗设备互联互通解决方案</title>
+    <link rel="stylesheet" href="styles.css" />
     <style>
-      /* 全局重置与基础样式 */
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: "Microsoft YaHei", "Heiti SC", sans-serif;
-        color: #333;
-        line-height: 1.6;
-        background-color: #f9fafb;
-        -webkit-font-smoothing: antialiased;
-      }
-
-      a {
-        text-decoration: none;
-        color: inherit;
-        transition: 0.3s;
-      }
-
-      ul {
-        list-style: none;
-      }
-
-      /* 布局工具类 */
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 20px;
-      }
-
-      .section {
-        padding: 80px 0;
-      }
-
-      .text-center {
-        text-align: center;
-      }
-      .mb-20 {
-        margin-bottom: 20px;
-      }
-      .mb-40 {
-        margin-bottom: 40px;
-      }
-      .mb-60 {
-        margin-bottom: 60px;
-      }
-
-      .flex {
-        display: flex;
-      }
-      .items-center {
-        align-items: center;
-      }
-      .justify-between {
-        justify-content: space-between;
-      }
-      .justify-center {
-        justify-content: center;
-      }
-      .flex-col {
-        flex-direction: column;
-      }
-
-      /* 响应式栅格布局 */
-      .grid {
-        display: grid;
-        gap: 30px;
-      }
-      .grid-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .grid-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .grid-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      /* 颜色变量 */
-      :root {
-        --primary-color: #0066cc; /* 医疗蓝 */
-        --primary-hover: #0052a3;
-        --bg-light: #f4f7fa;
-        --text-gray: #666;
-        --border-color: #e1e4e8;
-      }
-
-      /* 导航栏 */
-      header {
-        background: #fff;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-      }
-
-      .nav-logo {
-        font-size: 20px;
-        font-weight: bold;
-        color: var(--primary-color);
-        display: flex;
-        align-items: center;
-      }
-
-      .nav-logo span {
-        background: var(--primary-color);
-        color: #fff;
-        padding: 2px 8px;
-        border-radius: 4px;
-        margin-right: 8px;
-      }
-
-      .nav-links a {
-        margin-left: 30px;
-        font-size: 15px;
-        color: #555;
-        font-weight: 500;
-      }
-
-      .nav-links a:hover {
-        color: var(--primary-color);
-      }
-
-      .nav-btn {
-        background: var(--primary-color);
-        color: #fff !important;
-        padding: 8px 20px;
-        border-radius: 4px;
-      }
-      .nav-btn:hover {
-        background: var(--primary-hover);
-      }
-
       /* 首屏 Banner */
       .hero {
         margin-top: 70px;
@@ -188,19 +53,6 @@
       }
       .btn-outline:hover {
         background: rgba(255, 255, 255, 0.1);
-      }
-
-      /* 通用标题样式 */
-      .section-title {
-        font-size: 32px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        color: #222;
-      }
-      .section-subtitle {
-        color: var(--text-gray);
-        font-size: 16px;
-        margin-bottom: 50px;
       }
 
       /* 简介区域 */
@@ -478,60 +330,27 @@
       }
 
       /* 底部 */
-      footer {
-        background: #fff;
-        border-top: 1px solid #eee;
+      .home-footer {
         padding: 60px 0 30px;
       }
-      .cta-box {
-        background: var(--primary-color);
-        border-radius: 12px;
+
+      .home-cta-box {
         padding: 50px;
-        text-align: center;
-        color: #fff;
         margin-bottom: 60px;
       }
-      .cta-btn {
-        background: #fff;
-        color: var(--primary-color);
+
+      .home-cta-btn {
         padding: 15px 40px;
-        border-radius: 5px;
-        font-weight: bold;
-        display: inline-block;
         margin-top: 20px;
-      }
-      .footer-info {
-        display: flex;
-        justify-content: space-between;
-        color: #999;
-        font-size: 14px;
-        border-top: 1px solid #eee;
-        padding-top: 20px;
       }
 
       /* 移动端适配 */
       @media (max-width: 768px) {
-        .nav-links {
-          display: none;
-        }
         .hero h1 {
           font-size: 32px;
         }
-        .grid-2,
-        .grid-3,
-        .grid-4 {
-          grid-template-columns: 1fr;
-        }
         .intro-box .flex {
           flex-direction: column;
-        }
-        .cta-box {
-          padding: 30px;
-        }
-        .footer-info {
-          flex-direction: column;
-          text-align: center;
-          gap: 10px;
         }
       }
     </style>
@@ -547,15 +366,18 @@
                 d="M905.898667 761.514667c-23.409778 0-45.824 9.585778-62.122667 26.481777l-112.981333-65.479111v-233.187555l-200.362667-116.224V261.802667a88.832 88.832 0 0 0 72.419556-92.472889 88.746667 88.746667 0 0 0-82.261334-83.768889 88.576 88.576 0 0 0-92.928 71.623111 88.974222 88.974222 0 0 0 59.107556 101.603556v113.550222l-200.362667 116.992v229.774222-2.645333l-105.443555 61.326222a87.04 87.04 0 0 0-110.705778-16.412445 88.035556 88.035556 0 0 0-35.953778 106.524445 87.267556 87.267556 0 0 0 97.792 54.698667 87.722667 87.722667 0 0 0 71.082667-86.897778 75.377778 75.377778 0 0 0-2.247111-18.545778l103.566222-59.818667 205.596444 119.239111 199.992889-115.825777 112.952889 65.507555a83.456 83.456 0 0 0-3.754667 23.836445c0 35.868444 21.504 68.181333 54.499556 81.863111a87.722667 87.722667 0 0 0 96.056889-19.370667 88.888889 88.888889 0 0 0 18.887111-96.654222 88.120889 88.120889 0 0 0-81.692445-54.414222h-1.137777z m-553.585778-258.190223l156.273778-90.851555 157.44 90.851555-156.302223 90.851556-157.411555-90.851556z m334.791111 219.960889l-156.672 90.851556v-181.703111l156.672-91.249778v182.101333z"
               ></path>
             </svg>
-
             Hiot 生命体征数据采集系统
           </div>
+          <button class="nav-toggle" aria-label="菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <div class="nav-links">
-            <a href="#home">首页</a>
-            <a href="#intro">产品介绍</a>
-            <a href="#features">核心特性</a>
-            <a href="#compatibility">设备兼容</a>
-            <a href="#contact" class="nav-btn">项目合作</a>
+            <a href="index.html" class="active">首页</a>
+            <a href="cases.html">成功案例</a>
+            <a href="demo.html">在线演示</a>
+            <a href="cooperation.html" class="nav-btn">项目合作</a>
           </div>
         </div>
       </div>
@@ -567,8 +389,8 @@
         <h1>医院生命体征数据采集<br />一站式解决方案</h1>
         <p>不含波形，专注数值。兼容主流设备，支持断网续传。<br />为 HIS、EMR 及科研系统提供精准、标准化的数据底座。</p>
         <div class="hero-btns">
-          <a href="#features" class="btn-white">了解特性</a>
-          <a href="#contact" class="btn-outline">项目合作</a>
+          <a href="demo.html" class="btn-white">在线演示</a>
+          <a href="cooperation.html" class="btn-outline">项目合作</a>
         </div>
       </div>
     </section>
@@ -750,7 +572,7 @@
       <div class="container text-center">
         <h2 style="font-size: 32px; font-weight: bold; margin-bottom: 15px">可视化运维，一目了然</h2>
         <p style="color: #cbd5e0; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto">
-          无需登录服务器后台，通过浏览器即可管理所有接入设备。实时监控 IP、连接状态及最后采集时间。
+          无需登录服务器后台，通过浏览器即可查看所有接入设备。实时监控设备连接状态及数据采集情况。
         </p>
 
         <div class="browser-mockup">
@@ -834,16 +656,15 @@
     <!-- 底部与联系 -->
     <section class="section" id="contact">
       <div class="container">
-        <div class="cta-box">
-          <h2 style="font-size: 32px; margin-bottom: 15px">准备好提升数据采集效率了吗？</h2>
-          <p style="font-size: 18px; opacity: 0.9">了解更多信息或项目合作</p>
-          <a href="mailto:yusoo@qq.com" class="cta-btn">立即发送邮件</a>
-          <p style="margin-top: 20px; font-size: 14px; opacity: 0.8">E-mail：yusoo@qq.com</p>
+        <div class="cta-box home-cta-box">
+          <h2 style="font-size: 32px; margin-bottom: 15px">需要精准高效的设备数据采集系统吗？</h2>
+          <p style="font-size: 18px">了解更多信息或项目合作</p>
+          <a href="cooperation.html" class="cta-btn home-cta-btn">联系我们</a>
         </div>
       </div>
     </section>
 
-    <footer>
+    <footer class="home-footer">
       <div class="container">
         <div class="footer-info">
           <div>&copy; 2026 Hiot 生命体征数据采集系统. All rights reserved.</div>
@@ -855,5 +676,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
