@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hiot 生命体征数据采集系统：从麻醉机、监护仪等医疗设备实时采集生命体征数值，兼容飞利浦、德尔格、迈瑞等主流品牌，支持断网续传，为 HIS、EMR 及科研系统提供标准化数据底座。"
+    />
     <title>Hiot 生命体征数据采集系统 - 医疗设备互联互通解决方案</title>
+    <link rel="icon" href="logo.svg" />
     <link rel="stylesheet" href="styles.css" />
     <style>
       /* 首屏 Banner */
@@ -113,6 +118,10 @@
       .arch-bottom {
         background: #333;
         color: #fff;
+      }
+      .arch-node-soft {
+        background: #e2e8f0;
+        color: #475569;
       }
       .line {
         width: 2px;
@@ -359,27 +368,23 @@
     <!-- 导航栏 -->
     <header>
       <div class="container">
-        <div class="flex justify-between items-center" style="height: 70px">
-          <div class="nav-logo">
-            <svg viewBox="0 0 1024 1024" width="24" height="24" fill="#009245">
-              <path
-                d="M905.898667 761.514667c-23.409778 0-45.824 9.585778-62.122667 26.481777l-112.981333-65.479111v-233.187555l-200.362667-116.224V261.802667a88.832 88.832 0 0 0 72.419556-92.472889 88.746667 88.746667 0 0 0-82.261334-83.768889 88.576 88.576 0 0 0-92.928 71.623111 88.974222 88.974222 0 0 0 59.107556 101.603556v113.550222l-200.362667 116.992v229.774222-2.645333l-105.443555 61.326222a87.04 87.04 0 0 0-110.705778-16.412445 88.035556 88.035556 0 0 0-35.953778 106.524445 87.267556 87.267556 0 0 0 97.792 54.698667 87.722667 87.722667 0 0 0 71.082667-86.897778 75.377778 75.377778 0 0 0-2.247111-18.545778l103.566222-59.818667 205.596444 119.239111 199.992889-115.825777 112.952889 65.507555a83.456 83.456 0 0 0-3.754667 23.836445c0 35.868444 21.504 68.181333 54.499556 81.863111a87.722667 87.722667 0 0 0 96.056889-19.370667 88.888889 88.888889 0 0 0 18.887111-96.654222 88.120889 88.120889 0 0 0-81.692445-54.414222h-1.137777z m-553.585778-258.190223l156.273778-90.851555 157.44 90.851555-156.302223 90.851556-157.411555-90.851556z m334.791111 219.960889l-156.672 90.851556v-181.703111l156.672-91.249778v182.101333z"
-              ></path>
-            </svg>
+        <div class="nav-inner flex justify-between items-center">
+          <a class="nav-logo" href="index.html">
+            <img src="logo.svg" width="24" height="24" alt="Hiot" />
             Hiot 生命体征数据采集系统
-          </div>
+          </a>
           <input type="checkbox" id="navToggle" class="nav-toggle-checkbox" />
           <label for="navToggle" class="nav-toggle" aria-label="菜单">
             <span></span>
             <span></span>
             <span></span>
           </label>
-          <div class="nav-links">
+          <nav class="nav-links">
             <a href="index.html" class="active">首页</a>
             <a href="cases.html">成功案例</a>
             <a href="demo.html">在线演示</a>
             <a href="cooperation.html" class="nav-btn">项目合作</a>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
@@ -399,7 +404,7 @@
     <!-- 简介与架构 -->
     <section class="section" id="intro">
       <div class="container">
-        <div class="grid grid-2" style="align-items: center">
+        <div class="grid grid-2 items-center">
           <!-- 左侧文字 -->
           <div>
             <h2 class="section-title">连接设备孤岛，释放数据价值</h2>
@@ -425,8 +430,8 @@
               </div>
               <div class="line"></div>
               <div class="grid grid-2" style="width: 100%; gap: 10px">
-                <div class="arch-node" style="background: #e2e8f0; color: #475569">标准API接口</div>
-                <div class="arch-node" style="background: #e2e8f0; color: #475569">整点数据输出</div>
+                <div class="arch-node arch-node-soft">标准API接口</div>
+                <div class="arch-node arch-node-soft">整点数据输出</div>
               </div>
               <div class="line"></div>
               <div class="arch-node arch-bottom">第三方应用 (HIS / EMR / 科研平台)</div>
@@ -437,7 +442,7 @@
     </section>
 
     <!-- 核心特性 -->
-    <section class="section" id="features" style="background-color: #f4f7fa">
+    <section class="section section-alt" id="features">
       <div class="container">
         <div class="text-center">
           <h2 class="section-title">系统核心特性</h2>
@@ -669,10 +674,10 @@
       <div class="container">
         <div class="footer-info">
           <div>&copy; 2026 Hiot 生命体征数据采集系统. All rights reserved.</div>
-          <div>
-            <span style="margin-left: 20px">隐私政策</span>
-            <span style="margin-left: 20px">服务条款</span>
-            <a href="https://github.com/Yusoo/VitalSignsAcquisitionSystem" style="margin-left: 20px">Github</a>
+          <div class="footer-links">
+            <span>隐私政策</span>
+            <span>服务条款</span>
+            <a href="https://github.com/Yusoo/VitalSignsAcquisitionSystem">Github</a>
           </div>
         </div>
       </div>
