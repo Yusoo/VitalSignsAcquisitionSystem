@@ -48,18 +48,6 @@ ul {
   text-align: center;
 }
 
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-.mb-60 {
-  margin-bottom: 60px;
-}
-
 .flex {
   display: flex;
 }
@@ -70,14 +58,6 @@ ul {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .grid {
@@ -122,14 +102,6 @@ header {
   margin-right: 8px;
 }
 
-.nav-logo span {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 2px 8px;
-  border-radius: 4px;
-  margin-right: 8px;
-}
-
 .nav-links a {
   margin-left: 30px;
   font-size: 15px;
@@ -140,21 +112,6 @@ header {
 .nav-links a:hover,
 .nav-links a.active {
   color: var(--primary-color);
-}
-
-.nav-btn {
-  background: var(--primary-color);
-  color: #fff !important;
-  padding: 8px 20px;
-  border-radius: 4px;
-}
-
-.nav-btn:hover {
-  background: var(--primary-hover);
-}
-
-.nav-btn.active {
-  background: var(--primary-hover);
 }
 
 .nav-toggle-checkbox {
@@ -286,6 +243,7 @@ header {
 
 .screen-card img {
   width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -356,8 +314,6 @@ footer {
   justify-content: space-between;
   color: #999;
   font-size: 14px;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
 }
 
 .footer-links > * {
@@ -394,11 +350,6 @@ footer {
 
   .nav-links a:last-child {
     border-bottom: none;
-  }
-
-  .nav-btn {
-    margin-top: 8px;
-    text-align: center;
   }
 
   .page-hero h1 {
